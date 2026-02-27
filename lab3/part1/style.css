@@ -13,3 +13,28 @@ h1 {
     font-size: 2rem;
 }
 
+h2 {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.job-title {
+    color: darkslategray;
+    font-weight: bold;
+}
+
+ul {
+    background-color: white;
+    border: 5px solid purple;
+    padding:30px;
+    border-radius: 20px;
+}
+
+a:hover,
+a:focus{
+    color:darkgreen;
+    text-decoration: none;
+}
+a {
+    color: green;
+}
