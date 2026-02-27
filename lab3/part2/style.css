@@ -21,7 +21,26 @@ h3 {
 
 
 
-/* Layout */
+
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+section h2 {
+  text-indent: 2rem;
+}
+
+section p {
+  text-indent: 2rem;
+}
+
 
 main {
   display: grid;
@@ -33,11 +52,11 @@ main {
 /* header and footer */
 
 header {
-  border-bottom: 5px solid #aa6666;
+  border-bottom: 5px solid #6e90ff;
 }
 
 footer {
-  border-top: 5px solid #aa6666;
+  border-top: 5px solid #6e90ff;
 }
 
 footer p {
