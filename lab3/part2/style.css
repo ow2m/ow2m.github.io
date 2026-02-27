@@ -53,7 +53,7 @@ a {
 }
 
 a:visited {
-  color: #2238b5;
+  color: hsl(217, 100%, 66%);
 }
 
 a:hover,
@@ -72,6 +72,33 @@ ol {
 ul {
   list-style-type: square;
 }
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 8px;
+}
+
+nav a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #2326cf;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #3759ff;
+}
+
 
 
 /* header and footer */
