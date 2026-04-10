@@ -80,13 +80,12 @@ class Ball extends Shape {
     }
 }
 
+const para = document.querySelector('p');
+let count = 0;
 const balls = [];
-
 while (balls.length < 25) {
     const size = random(10, 20);
     const ball = new Ball(
-        // ball position always drawn at least one ball width
-        // away from the edge of the canvas, to avoid drawing errors
         random(0 + size, width - size),
         random(0 + size, height - size),
         random(-7, 7),
@@ -94,9 +93,11 @@ while (balls.length < 25) {
         randomRGB(),
         size
     );
-
     balls.push(ball);
+    count++;
+    para.textContent = 'Ball count: ' + count;
 }
+const evilBall = new EvilCircle(random(0, width), random(0, height));
 
 class EvilCircle extends Shape {
     constructor(x, y) {
@@ -147,7 +148,7 @@ class EvilCircle extends Shape {
 
     collisionDetect() {
         for (const ball of balls) {
-            if (ball.exists) { // Only check if the ball exists
+            if (ball.exists) {
                 const dx = this.x - ball.x;
                 const dy = this.y - ball.y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
