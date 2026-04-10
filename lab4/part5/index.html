@@ -29,10 +29,15 @@
     <form action="#">
         <h2>Facilities</h2>
         <div class="form-section">
-            Was the porridge
-            Too hot?
-            Too cold?
-            Just right?
+            <fieldset>
+                <legend>Was the porridge</legend>
+                <input type="radio" id="porridge-hot" name="porridge" value="Too hot?" checked />
+                <label for="porridge-hot">Too hot?</label>
+                <input type="radio" id="porridge-cold" name="porridge" value="Too cold?" />
+                <label for="porridge-cold">Too cold?</label>
+                <input type="radio" id="porridge-just-right" name="porridge" value="Just right?" />
+                <label for="porridge-just-right">Just right?</label>
+            </fieldset>
 
             Were the beds
             Too hard?
