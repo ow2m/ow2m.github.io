@@ -20,7 +20,7 @@ function updateDisplayedImage(src, alt) {
 }
 
 
-
+const baseURL = "https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
 for (const image of images) {
     const newImage = document.createElement("img");
     const url = baseURL + image.filename;
@@ -41,3 +41,15 @@ for (const image of images) {
         }
     });
 }
+
+
+btn.addEventListener("click", () => {
+    if (btn.classList.contains("dark")) {
+        btn.textContent = "Lighten";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0.5)";
+    } else {
+        btn.textContent = "Darken";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0)";
+    }
+    btn.classList.toggle("dark");
+});
